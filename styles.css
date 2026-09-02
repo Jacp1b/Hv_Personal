@@ -283,6 +283,16 @@ header p {
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
+#textoSobreMi {
+    line-height: 1.7;
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+}
+
+body.ModoOsc #textoSobreMi {
+    color: var(--text-light); 
+}
+
 /* --- Sección Contacto --- */
 #contacto {
     max-width: 600px;
