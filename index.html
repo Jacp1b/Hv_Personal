@@ -17,6 +17,7 @@
             <a href="#inicio">About</a>
             <a href="#proyectos">Projects</a>
             <a href="#contacto">Contacts</a>
+            <button onclick="modoOsc()" id="btnModoOsc">🌙 Modo Oscuro</button>
         </div>
     </nav>
 
@@ -27,7 +28,7 @@
             <p>Tecnólogo ADSO apasionado por el código estructurado y la arquitectura de datos. Especializado en transformar requerimientos en soluciones tecnológicas funcionales.</p>
             <div class="buttons">
                 <a href="#proyectos" class="btn btn-primary">Projects</a>
-                <a href="#" class="btn btn-outline">LinkedIn</a>
+                <a onclick="msjLkn()" href="https://www.linkedin.com/in/john-conde-174b7523b/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">LinkedIn</a>
             </div>
         </div>
         <div class="header-image-container">
@@ -44,7 +45,7 @@
                 <div class="project-info">
                     <h3>ARTESOFT</h3>
                     <p>Sistema web para la gestión de inventario, ventas y pedidos, integrando bases de datos relacionales y lógica de negocio.</p>
-                    <button class="btn btn-outline">View Project</button>
+                    <button onclick="msjProy()" class="btn btn-outline">View Project</button>
                 </div>
                 <div class="project-img bg-placeholder"></div>
             </article>
@@ -53,7 +54,7 @@
                 <div class="project-info">
                     <h3>NutriPet</h3>
                     <p>Plataforma enfocada en el cuidado, gestión de salud y programación de paseos para mascotas.</p>
-                    <button class="btn btn-outline">View Project</button>
+                    <button onclick="msjProy()" class="btn btn-outline">View Project</button>
                 </div>
                 <div class="project-img bg-placeholder"></div>
             </article>
@@ -62,7 +63,7 @@
                 <div class="project-info">
                     <h3>QrBicis</h3>
                     <p>Aplicativo Web y Movil para optimizar el registro de bicicletas en el parqueadero.</p>
-                    <button class="btn btn-outline">View Project</button>
+                    <button onclick="msjProy()" class="btn btn-outline">View Project</button>
                 </div>
                 <div class="project-img bg-placeholder"></div>
             </article>
@@ -95,7 +96,7 @@
                     <label for="mensaje">Mensaje</label>
                     <textarea id="mensaje" name="mensaje" rows="5"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary btn-right">Send</button>
+                <button onclick="msjContac()" type="submit" class="btn btn-primary btn-right">Send</button>
             </form>
 
 

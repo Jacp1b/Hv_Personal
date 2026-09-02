@@ -21,24 +21,20 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-
-    // 2. FUNCIONALIDAD DEL FORMULARIO DE CONTACTO
-    const contactForm = document.querySelector('.contact-form');
-
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault(); // Evita que la página se recargue al enviar
-
-            // Obtenemos el valor del campo nombre para personalizar el mensaje
-            const nombreInput = document.getElementById('nombre').value;
-            const nombre = nombreInput ? nombreInput : 'Visitante';
-
-            // Mostramos una alerta de éxito
-            alert(`¡Gracias por tu mensaje, ${nombre}! Me pondré en contacto contigo muy pronto.`);
-
-            // Limpiamos los campos del formulario
-            contactForm.reset();
-        });
-    }
-
 });
+
+function modoOsc() {
+    const esOscuro = document.body.classList.toggle('ModoOsc');
+    document.getElementById('btnModoOsc').textContent = esOscuro ? '☀️ Modo Claro' : '🌙 Modo Oscuro';
+}
+function msjContac(){
+     alert("Gracias por contactarme");
+}
+
+function msjLkn(){
+    alert ("Redirigiendo a Linkedin");
+}
+
+function msjProy(){
+    alert ("Proyecto Disponible en GitHub");
+}
